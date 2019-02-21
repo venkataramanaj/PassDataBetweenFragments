@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#574706"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="sedc.com.passdatabetweenfragments.FirstFragment"
+        android:id="@+id/fragment"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/fragment_first" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="sedc.com.passdatabetweenfragments.SecondFragment"
+        android:id="@+id/fragment2"
+        android:layout_below="@+id/fragment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        tools:layout="@layout/fragment_second" />
+
+</RelativeLayout>
